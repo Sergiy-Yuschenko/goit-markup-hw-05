@@ -215,6 +215,18 @@ img {
         color: var(--accent-color);
 }
 
+.navigation-list-link.active::after {
+        content: ""; 
+        width: auto;
+        height: 4px;
+        display: block;
+        background: var(--accent-color);
+        border-radius: 2px;
+
+        position:relative;
+        top: 30px;
+}
+
 
 /* ============== END HEADER ============== */
 
