@@ -795,12 +795,28 @@ padding: 27px 0;
 .close-button {
         width: 30px;
         height: 30px;
-        border-radius: 50%;
         position: absolute;
         top: 8px;
         right: 8px;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
         cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus
+{
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        outline: none;
+}
+.close-button:active {
+        border: 4px solid rgba(251, 142, 156, 1); 
+        border-radius: 50%; 
+        outline: none;
+}
+
+.close-button:active .close-button-icon {
+        fill: rgba(251, 0, 0, 1);
 }
 
 .is-hidden {
